@@ -1,0 +1,22 @@
+Task-2
+
+Part-1
+	1. In the graph we can see that in general validation accuracy increases as number of data points seen increases. It is because when more number of data points are seen, we have more knowledge about how data is behaving. Due to which we are able to predict validation points more correctly.
+
+	2. From 1000 data points to 1500 data points accuracy decreases. It is because after 1000 points, more points are conflicting with the earlier seen points which may be because of noise or reality which makes model less accurate.
+
+	3. As number of data point reaches it's maximum value accuracy becomes almost constant because after a while adding more data points does not improve the model.
+
+	4.As number of data point reaches it's maximum value accuracy tends to 80% (not 100%) because seen data is never sufficient enough.
+
+Part-2
+
+	1. No, accuracy is 80% which is not close to 100%. It is because training data is not sufficient.
+
+	2. Since there is no training data, classifier has no information based on which it can classify hence it can assign uniform probability to each of the class. and randomly pick any of the class for prediction.
+	
+	Let N be number of classes. Test data can be in one of this class.(N options) and classifier randomly picks any of the class ( N options ) hence probability of correct guess is (1/N)*(1/N) that is 1/N^2.
+	
+	Here N = 10, so accuracy should be 1%
+
+
