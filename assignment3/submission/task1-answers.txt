@@ -1,0 +1,32 @@
+For Accuracy of 97.1% 
+	Batch Size : 16
+	Number of Hidden Layers : 6
+	Learning Rate : 0.02
+
+-----------------------------------------------------------------------------------------
+
+Explanations 
+
+------------------------------------------------------------------------------------------
+
+Batch Size :
+	As batch size increaes, accuracy decreases.
+	When batch size is less, we tune the parameters based on values of small number of datapoints combinely. Hence tuning is better. That is it respects more or less all the data points. When batch size increases average of all the point is considered which is error prone.
+
+Number of Hidden Layers :
+	As number of layeres increases, accuracy increases.
+	As number of layers increases, network is able to produce more complex function which in turn describes data in a better way.
+
+Learning Rate :
+	As learning rate increases, accuracy is more or less constant.
+	After a point(0.4 here) accuracy decreses drastically. (almost linear)
+	Decrease of accuracy can be explained by the fact that as learning rate increases, just like gradient descent, steepness of reaching solution increases. and with giving larger weights to datapoints in reaching solution is likely to add more error in answer.
+
+
+------------------------------------------------------------------------------------------
+
+Accuracy should not be the only criteria in parameter setting.
+
+Simplicity is the other thing to consider to avoid overfitting.
+
+For nearly same accuracy, Neural Network with less complexity (less number of hidden layers and nodes) should be used. It makes processing of test data faster. Moreover since training data is almost always not sufficient, more complex network is likely to overfit. Overfitting should be avoided It is also based on heauristics of occam's rasor. 

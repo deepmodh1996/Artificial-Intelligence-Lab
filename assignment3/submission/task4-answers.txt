@@ -1,0 +1,7 @@
+flower :
+
+Trying linear - planner combination which diveds plane in 8 regions as required in flower.
+
+Spiral :
+
+Since it is curved we need more complex function as trying as many nodes are possible in each layer and by trying number of necessary layers turned out to be 5.
