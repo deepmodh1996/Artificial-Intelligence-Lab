@@ -1,0 +1,9 @@
+Accuracy for DecisionStump :
+	Training : 67.0017 %
+	Test : 67.0017 %
+
+Accuracy for LogitBoost :
+	Training : 90.5177 %
+	Test : 90.4702 %
+
+Number of iterations needed by LogitBoost to reach 90% accuracy : 9 

@@ -1,0 +1,18 @@
+following commands are used. ( filename and arguments can be changed)
+
+to keep default values, corrosponding argument isn't passed.
+
+variations of commands given in assignment are not mentioned.
+
+for confidence factor :
+java weka.classifiers.trees.J48 -x 5 -t breast-cancer.arff -C 0.2 
+
+for multilayerPerceptron :
+java weka.classifiers.functions.MultilayerPerceptron -N 1 -split-percentage 80 -t mnist-large.arff -c first
+
+for logitboost :
+java weka.classifiers.meta.LogitBoost -x 5 -I 9 -t musk.arff 
+
+for decisionStump :
+java weka.classifiers.trees.DecisionStump -x 5 -t musk.arff
+

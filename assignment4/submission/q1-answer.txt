@@ -1,0 +1,5 @@
+Explanation of pattern in graph :
+
+1. As confidence factor increases accuracy of training data increases. Because the confidence factor can be viewed as how confident the algorithm is about the training data. hence more the confidence factor, we are assigning more surity in traing data that is increase it's accuracy.
+
+2. As confidence factor increase accuracy of test data deacrease. It is because overfitting increases.

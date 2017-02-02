@@ -1,0 +1,14 @@
+Observation from graph :
+
+	time :
+		1. MultilayerPerceptron takes more time because it is more complex than decision tree.
+		2. There is significant spike in time taken around 5000 datapoints for MultilayerPerceptron it is because until that point number of epochs used are 500 (default value), after that only 2 and 1 epochs are used hence time taken is decreased.
+
+
+	accuracy :
+		1. Both Methods have more or less same accuracy over different datasets.
+		2. Graph is neither linear or "good function" of number of datasets. It is because of the training data. The data is not sufficient enough to create accurate enough model for the cases where accuracy is less. On the other hand whenever accuracy is high, it can be explained by training data's ability to catch most of the instances of test data.
+
+Method of choice is J48 :
+	It can be observed that both the methods have more or less similar accuracy over number of data sets. Hence the deciding factor in chocie of method is time it takes for processing.
+	Time taken by J48 is significantly lower than multilayer perceptron. which is desired as it will take less time in processing and predicting model and data.
