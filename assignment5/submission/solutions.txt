@@ -1,0 +1,47 @@
+Name: Deep Modh
+Roll number: 140050002
+========================================
+
+
+================
+     TASK 2
+================
+
+1. For each dataset and distance metric, report “average SSE" and “average iterations”. (1.5 marks)
+Answer: 
+
+Dataset     | Average SSE  | Average Iterations
+================================================
+   100.csv  | 8472.6331146 | 2.52   
+  1000.csv  | 20889402.910 | 3.4    
+ 10000.csv  | 200199632.35 | 19.5	   
+
+
+2. Run your code on datasets/garden.csv, with different values of k. Looking at the performance plots, does the SSE of k-means algorithm ever increase as the iterations are made? Is your answer the same for both Euclidean and Manhattan distances? (0.5 marks)
+Answer: SSE never increases as number of iterations increases. After a while it becomes more or less constant.
+
+3. Regarding the answer to question 2 , why do you think this happens? What does it imply? (0.5 marks)
+Answer: As proved in class, SSE(k+1) < SSE(k) where SSE(i) is SSE in ith iteration. That is algorithm always gives improved answer. So SSE will never increase as number iterations increases.
+
+4. Look at the files 3lines.png and mouse.png. Manually draw cluster boundaries around the 3 clusters visible in each file (no need to submit the hand drawn clusters). Test the k-means algorithm on the datasets datasets/3lines.csv and datasets/mouse.csv. How does the algorithm’s clustering compare with the clustering you would do by hand? Why do you think this happens? (0.5 marks)
+Answer:
+For some clusters some of the points from two near by lines are considered in the same cluster.
+Same way clustering is not same as 3 "visible" disks. Same disk is shared by different clusters.
+It is because initially centers are picked uniformly. So it is likely that centers are relatively away from each other that is there are significant number of points between two centers which are shared by two clusters. Hence these centers more or less do not shift, and hence visually apparent disks or lines are not recognized by clusters.
+
+
+================
+     TASK 3
+================
+
+1. For each dataset, and initialization algorithm, report “average SSE” and "average iterations". (1 mark)
+Answer:
+
+Dataset     |  Initialization | Average SSE  | Average Iterations
+==================================================================
+   100.csv  | RandomPartition |8472.63311469| 2.01
+   100.csv  |        kmeans++ |8472.63311469| 2.00    
+  1000.csv  | RandomPartition |22034765.0924| 2.84    
+  1000.csv  |        kmeans++ |19887301.0042| 3.16    
+ 10000.csv  | RandomPartition |199237908.048| 13.5   
+ 10000.csv  |        kmeans++ |22323178.8625| 7.5     
