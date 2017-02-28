@@ -1,0 +1,15 @@
+Gamma		Number of iterations
+0.9			26
+0.99		3016
+0.999		19020
+0.9999		57575
+0.99999		69628
+0.999999	70917
+
+As gamma increases, number of iterations increases.
+More value of gamma means, we are increasing dependence on future rewards. ( V = Exp[r1 + gamma*r2 + ...])
+That is we are more forcing future rewards to be more and up to more depth of rewards.
+Hence to achieve there, more times iteration is necessary. (have more knowledge)
+
+Yes, optimal value function(V) varies with gamma. It because defination of V is dependent on gamma.
+Since V depends on gamma, PI should also change as gamma is changed. However PI doesn't change drastically because we are comparing relatively similar values of gamma. (between 0.9 and 0.999999 NOT 0.1 and 0.9). Thus only few of the optimal action changes.
