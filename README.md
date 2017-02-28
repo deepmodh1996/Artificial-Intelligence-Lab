@@ -11,3 +11,4 @@ This repository contains work done in the labs during Spring 2017 in "Artificial
 | 3 | Neural Networks|
 | 4 | Weka : Decision Tree, Boosting Decision Stumps and Neural Networks |
 | 5 | k-means clustering : k-means++, Random Partition and Forgy Initialisation|
+| 6 | Markov Decision Problem |
