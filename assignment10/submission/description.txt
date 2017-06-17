@@ -1,0 +1,13 @@
+Q.1
+We do sampling based on legal positions uniformly.
+Here sampling replaces the use of probabilities.
+GetBelief is converting sampling into probability based on cardinality.
+
+
+Q.2
+For each particle, we get the distribution of new set of positions and we do sample based on that. (for each particle)
+
+Q.3
+Using iteratortool.product, we get tuple of possible position for ghosts.
+for each ghost based on emmision model and true distance of particle, we get probability which is multiplied for a tuple.(fundamental law of multiplication for probability)
+for elapse time based on getPositionDistributionForGhost, we get position probability distribution and then get a sample for that ghost
