@@ -14,3 +14,4 @@ This repository contains work done in the labs during Spring 2017 in "Artificial
 | 6 | Markov Decision Problem |
 | 7 | Search in Pacman : Astar and Heuristic Construction, UCS, BFS, DFS |
 | 8 | Search in Pacman : Minimax, Alpha-Beta Pruning, Expectimax |
+| 9 | Bayesian Network : Exact Inference |
