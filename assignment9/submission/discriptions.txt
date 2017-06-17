@@ -1,0 +1,27 @@
+-----------------------------------------------------------------------------------------
+									Task 1
+-----------------------------------------------------------------------------------------
+
+Pacman sometimes has trouble finding the location when there are possible locations which have same radial distance(manhattan distance) between pacman and ghost. Pacman can not distinguish the locations because it does not have freedom to explore the world. Hence value of truedistance remains same when sensed noisy distance is same.
+
+Such situation does not occur when pacman can move because during the motion, manhattan distance changes and so does noisy distance.
+
+
+-----------------------------------------------------------------------------------------
+									Task 2
+-----------------------------------------------------------------------------------------
+
+Other than the first test case, we notice differences imerging in the shading of squares.
+
+As mentioned in question, lighter shades corrospondence to locations which are more likely to be ocupied by the ghost. From the evidence of movement and location of the ghost, we can figure out the places where ghost is staying for the most of the times. Eg. bottom regions in GoSouthGhost. These are the locations which are more likely to have ghost and hence lighter in color. Which can be seen clearly in second and third test case. In last test case, top most region gets darker and bottom square is more or less equally lit. It is because ghost is moving throught the bottom square.
+
+In first test case ghost moves uniformly random across entire region hence no significant color shading is observed.
+
+
+-----------------------------------------------------------------------------------------
+									Task 3
+-----------------------------------------------------------------------------------------
+
+Pacman knows how to use both his prior knowledge and his observations when figuring out where a ghost is.We use both observe and elapseTime implementations together. Pacman assumes that each ghost is in its most likely position according to its beliefs, then moves toward the closest ghost. 
+
+It gives good result because we are using both the knowledges combinely. Which improves the score significantly.
